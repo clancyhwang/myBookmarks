@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyBookmarks</title>
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="./assets/css/addMore.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  </head>
+
+  <body>
+    
+    <div class="masthead clearfix">
+      <div class="inner">
+      <div>
+        <img src="assets/img/logo.png"/>
+        <a href="logined.html"><h3 class="masthead-brand">MyBookmarks</h3></a>
+      </div>
+        <nav>
+          <ul class="nav masthead-nav">
+            <li class="active"><a href="logined.html">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a id="name" href="index.html">Hello, Clancy</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id = "content">
+      <div id = "popularWrapper">
+        <div id="popularText">Popular websites</div>
+        <div id="search">
+          <input type="text" id="searchBar" placeholder="  Search websites" />
+          <div id="searchIcon">
+            <img style="height:auto; width:auto; max-width:39px; max-height:39px;" src = "assets/img/search.png">
+          </div>
+        </div>
+      </div>
+
+      <div id = "tabs">
+
+
+        <div class = "tab" id="tab1">
+          <div class = "title">Global</div>
+          <div class = "tabsContainer">
+            <div class = "combo">
+              <a href="http://www.google.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/google.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "google">Google</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.facebook.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/facebook.jpg"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "facebook">Facebook</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.youtube.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/youtube.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "youtube">Youtube</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.yahoo.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/yahoo.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "yahoo">Yahoo</div>
+            </div>
+            
+          </div>
+          <a href = "#"><div id = "more" class = "seeMore">Explore more</div></a>
+        </div>
+
+
+        <div class = "tab" id="tab2">
+          <div class = "title">United States</div>
+          <div class = "tabsContainer">
+            <div class = "combo">
+              <a href="http://www.amazon.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/amazon.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "amazon">Amazon</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.wikipedia.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/wiki.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "wiki">Wikipedia</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.twitter.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/twitter.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "twitter">Twitter</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.ebay.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/ebay.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "ebay">Ebay</div>
+            </div>
+            
+          </div>
+          <a href = "#"><div id = "more" class = "seeMore">Explore more</div></a>
+        </div>
+
+        <div class = "tab" id="tab3">
+          <div class = "title">China</div>
+          <div class = "tabsContainer">
+            <div class = "combo">
+              <a href="http://www.baidu.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/baidu.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "baidu">Baidu</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.taobao.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/taobao.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "taobao">Taobao</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.qq.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/qq.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "qq">QQ</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.sina.com.cn/" target="_blank"><div class = "tabImage"><img src = "assets/img/sina.png"></div></a>
+              <div class = "plusImage"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+              <div class = "tabText" id = "sina">Sina</div>
+            </div>
+            
+          </div>
+          <a href = "#"><div id = "more" class = "seeMore">Explore more</div></a>
+        </div>
+
+
+      </div>
+
+      <div id = "specificWrapper">
+        <div id="specificText">Specific URL</div>
+        <div id="url">
+          <input type="text" id="urlBar" placeholder="  Type in URL you want to add" />
+
+          <a href = "#"><div id = "add">Add</div></a>
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </body>
+</html>

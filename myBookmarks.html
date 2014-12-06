@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyBookmarks</title>
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="./assets/css/myBookmarks.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <div class="masthead clearfix">
+      <div class="inner">
+      <div>
+        <img src="assets/img/logo.png"/>
+        <a href="logined.html"><h3 class="masthead-brand">MyBookmarks</h3></a>
+      </div>
+        <nav>
+          <ul class="nav masthead-nav">
+            <li><a href="logined.html">HOME</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li class="active"><li><a id="name" href="index.html">Hello, Clancy</a></li>
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div id = "content">
+      <div id = "personalWrapper">
+        <div id="personalText">Clancy's Bookmarks</div>
+        <div id="search">
+          <input type="text" id="searchBar" placeholder="  Search in your bookmarks" />
+          <div id="searchIcon">
+            <img style="height:auto; width:auto; max-width:39px; max-height:39px;" src = "assets/img/search.png">
+          </div>
+        </div>
+      </div>   
+
+      <div id = "groupWrapper">
+        <div id = "groupText">My groups</div>
+        <div id = "groups">
+          <a href = "#socialTab">
+            <div class = "group" id = "social">Social</div>
+          </a>
+          <div class = "minusImage"><img style="height:auto; width:auto; max-width:15px; max-height:15px;" src = "assets/img/minus.png"></div>
+          <a href = "#schoolTab">
+            <div class = "group" id = "school">School</div>
+          </a>
+          <div class = "minusImage0"><img style="height:auto; width:auto; max-width:15px; max-height:15px;" src = "assets/img/minus.png"></div>
+          <div id = "plusImage1"><img style="height:auto; width:auto; max-width:25px; max-height:25px;" src = "assets/img/plus.png"></div>
+          <a><div class = "group" id ="edit">Edit</div></a>
+        </div>
+      </div>
+
+
+
+      <div id = "tabs">
+
+
+        <div class = "tab" id="tab1">
+          <div class = "title" id = "socialTab">Social</div>
+          <div class = "tabsContainer">
+            <div class = "combo">
+              <a href="http://www.twitter.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/twitter.png"></div></a>
+              <div class = "minusImage1"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "google">Twitter</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.facebook.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/facebook.jpg"></div></a>
+              <div class = "minusImage1"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "facebook">Facebook</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.renren.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/renren.png"></div></a>
+              <div class = "minusImage1"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "youtube">Renren</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.weibo.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/weibo.jpg"></div></a>
+              <div class = "minusImage1"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "yahoo">Weibo</div>
+            </div>
+            
+          </div>
+          <a><div class = "group" id ="tabEdit">Edit</div></a>
+          <a href = "addMore.html"><div id = "more" class = "seeMore">Explore more</div></a>
+        </div>
+
+        <div class = "tab" id="tab2">
+          <div class = "title" id = "schoolTab">School</div>
+          <div class = "tabsContainer" id="tabsContainer2">
+            <div class = "combo">
+              <a href="https://telebears.berkeley.edu/telebears/invalidPage.jsp" target="_blank"><div class = "tabImage"><img src = "assets/img/telebears.png"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "google">telebears</div>
+            </div>
+            <div class = "combo">
+              <a href="https://bearfacts.berkeley.edu/bearfacts/" target="_blank"><div class = "tabImage"><img src = "assets/img/bearfacts.png"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "facebook">bearfacts</div>
+            </div>
+            <div class = "combo">
+              <a href="https://bcourses.berkeley.edu/" target="_blank"><div class = "tabImage"><img src = "assets/img/bcourse.png"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "youtube">bcourse</div>
+            </div>
+            <div class = "combo">
+              <a href="http://www.piazza.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/piazza.jpg"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "yahoo">piazza</div>
+            </div>
+
+            <div class = "combo">
+              <a href="http://ninjacourses.com/" target="_blank"><div class = "tabImage"><img src = "assets/img/ninja.png"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "google">ninja</div>
+            </div>
+            <div class = "combo">
+              <a href="http://schedule.berkeley.edu/" target="_blank"><div class = "tabImage"><img src = "assets/img/schedule.png"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "facebook">schedule</div>
+            </div>
+            <div class = "combo">
+              <a href="https://bspace.berkeley.edu/portal/site/55470150-b4b6-402b-a4c2-db19bc529375/page/05c20245-0cce-4b45-a4bc-6acdf7dd3d6f" target="_blank"><div class = "tabImage"><img src = "assets/img/bspace.png"></div></a>
+              <div class = "minusImage2"><img style="height:auto; width:auto; max-width:18px; max-height:18px;" src = "assets/img/minus.png"></div>
+              <div class = "tabText" id = "youtube">bspace</div>
+            </div>
+            
+
+          </div>
+          <a><div class = "group" id ="tabEdit2">Edit</div></a>
+          
+          <a href = "addMore.html"><div  class = "seeMore" id = "seeMore2" id = "more">Explore more</div></a>
+        </div>
+
+      </div>   
+
+      <div id = "star">
+        <a href = "#"><div id = "starImg"><img style="height:auto; width:auto; max-width:39px; max-height:39px;" src = "assets/img/star.png"></div></a>
+        <div id = "starText">Make this your homepage</div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

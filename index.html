@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MyBookmarks</title>
+    <link rel="shortcut icon" href="assets/img/logo.png">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </head>
+
+  <body>
+	<div id="modal-container">
+		<div id="modal-overlay"></div>
+		<div id="modal-box-wrapper">
+			<div id="modal-box">
+				
+				<div id="Modal-Header">Login</div>
+				<div id="Modal-Content">
+					<input type="text" id="username" placeholder="Username" />
+					<input type="password" id="password" placeholder="Password" />
+				</div>
+				<div id="Modal-footer">
+					<div id="submit"><a href = "logined.html">Submit</a></div>
+					<div id="cancel">Cancel</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  	<div id="background">
+  		<img src = "assets/img/back.jpeg">
+  	</div>
+  	<div id = "background-overlay"></div>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+	  	
+        <div class="cover-container">
+			
+          <div class="masthead clearfix">
+            <div class="inner">
+	          <div>
+		          <img src="assets/img/logo.png"/>
+				  <a href="index.html"><h3 class="masthead-brand">MyBookmarks</h3></a>
+	          </div>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="index.html">HOME</a></li>
+                  <li><a href="#">CONTACT</a></li>
+                  <!-- <li class="login"><a class="btn btn-lg btn-default">Login</a></li> -->
+                  <li class="login"><a href="#">LOGIN</a></li>
+
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading">Your Favorite Websites At A Glance</h1>
+            <p class="lead">Tired of flaky Chrome bookmarks?<br>MyBookmarks puts your favorite sites on a single page</p>
+            <p class="lead">
+              <a href="myBookmarks.html" class="btn btn-lg btn-default">My Bookmarks</a>
+              <a href="addMore.html" class="btn btn-lg btn-default">Add More</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner" id="copyright">
+              <p>&copy Copyright 2014 <a href="http://www.linkedin.com/in/clancyhwang/" target="_blank" id = "copy">ClancyHwang</a></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

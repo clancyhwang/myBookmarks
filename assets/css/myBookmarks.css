@@ -1,0 +1,749 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: black;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+a.btn.btn-lg.btn-default {
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+a.btn.btn-lg.btn-default:hover {
+  background: #ffbb55;
+}
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: floralwhite;
+}
+body {
+  color: #fff;
+  text-align: center;
+  /* text-shadow: 0 1px 3px rgba(0,0,0,.5); */
+}
+
+p.lead {
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+
+p.lead {
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.2px;
+    font-size: 19px;
+}
+
+h1 {
+  font-family: "Helvetica Neue";
+  font-size: 36px;
+}
+#background-overlay{
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  opacity: 0.25;
+}
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  position: absolute;
+  top: 0px;
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+#background{
+  width: 100%;
+  height: 100%;
+}
+
+#background img{
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  /* color: #fff; */ /* IE8 proofing */
+  /* color: rgba(255,255,255,1); */
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: black;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  /* color: #fff; */
+   border-bottom-color: black; 
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.8);
+  /* text-decoration: none; */
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+h3.masthead-brand {
+    font-family: 'Ubuntu', sans-serif;
+}
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    /* position: fixed; */
+    top: 0;
+  
+    left: calc(50% - 960px/2);
+    margin: 0 auto;
+}
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 960px;
+  }
+}
+a.btn.btn-lg.btn-default {
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: navajowhite;
+}
+
+img {
+    width: 50px;
+    float: left;
+    height: 50px;
+}
+
+body {margin:0;padding:0;width: 100%;height: 1400px;}
+  
+.site-wrapper-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba(0,0,0,0.4);
+}
+#copy {
+    color: rgba(255,255,255,.8);
+}
+
+.login a.btn.btn-lg.btn-default {
+    color: black;
+    padding: 7px;
+    letter-spacing: 0px;
+    border-bottom: 1px solid #fff;
+    /* border-bottom-color: white; */
+    cursor: pointer;
+}
+
+.login a.btn.btn-lg.btn-default:hover {
+  background: #ffbb55;
+}
+
+#modal-container{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  display: none; 
+}
+
+#modal-overlay{
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+#modal-box{
+  width: 400px;
+  border-radius: 5px;
+  height: 220px;
+  background: navajowhite;
+  position: absolute;
+  top: calc(50% - 250px/2);
+  left: calc(50% - 400px/2);
+  
+}
+
+/* Question 3 */
+#username{
+  border: 3px solid black;
+  padding: 10px;
+  background: transparent; 
+  margin: 0px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 300px;
+  position: absolute;
+  top: 65px;
+  left: calc(50% - 326px/2);
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#password{
+  border: 3px solid black;
+  padding: 10px;
+  background: transparent; 
+  margin: 0px;
+  margin-bottom: 20px;
+  width: 300px;
+  border-radius: 5px;
+  position: absolute;
+  top: 115px;
+  left: calc(50% - 326px/2);
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+#username::-webkit-input-placeholder   {
+  color:black;
+  font-size: 12px;
+  font-weight: 700; 
+}
+#password::-webkit-input-placeholder   {
+  color:black;
+  font-size: 12px;
+  font-weight: 700; 
+}
+
+#Modal-Content{
+  position: relative;
+}
+
+#Modal-Header {
+    position: absolute;
+    left: 36px;
+    color: black;
+    top: 25px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#submit {
+    position: absolute;
+    bottom: 20px;
+    padding: 6px;
+    right: 105px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#cancel {
+    position: absolute; 
+    bottom: 20px; 
+    right: 37px;
+    background: black;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+}
+#copyright {
+    position: relative;
+    top: 20px;
+}
+
+#personalWrapper {
+    width: 920px;
+    height: 100px;
+    position: absolute;
+    /* top: 120px; */
+    background: antiquewhite;
+    background: transparent;
+    left: 20px;
+    /* right: 20px; */
+    border-radius: 5px;
+    /* border: 1px solid royalblue; */
+    /* left: 200px; */
+    /* border: 2px solid navajowhite; */
+    background: white;
+    box-shadow: 0px 0px 5px #edeae5;
+}
+
+#specificWrapper {
+    width: 920px;
+    height: 100px;
+    position: absolute;
+    top: 1010px;
+    background: antiquewhite;
+    left: 20px;
+    /* bottom: 0px; */
+    border: 1px solid royalblue;
+    /* right: 20px; */
+    border-radius: 5px;
+    /* left: 200px; */
+    background: transparent;
+    /* border: 2px solid navajowhite; */
+}
+
+#personalText {
+    text-align: left;
+    top:;
+    color: royalblue;
+    position: absolute;
+    top: 10px;
+    /* left: 20px; */
+    left: calc(50% - 200px/2);
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#specificText {
+    text-align: left;
+    top:;
+    color: royalblue;
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    left: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#searchBar {
+    width: 280px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 40px;
+    border-radius: 5px;
+    left: 0px;
+    left: calc(50% - 350px/2);
+}
+
+#urlBar {
+    width: 280px;
+    height: 30px;
+    background: white;
+    position: absolute;
+    top: 40px;
+    border-radius: 5px;
+    left: 0px;
+    left: 280px;
+}
+
+#searchIcon {
+    width: 36px;
+    height: 36px;
+    /* background: white; */
+    position: absolute;
+    top: 38px;
+    left: 572px;
+    border-radius: 5px;
+}
+
+#content {
+    position: absolute;
+    width: 960px;
+    height: 1200px;
+    left: calc(50% - 960px/2);
+    top: 150px;
+}
+
+#tabs {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    /* border-radius: 5px; */
+}
+
+.tab {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 180px;
+    border-radius: 5px;
+    /* background: cornsilk; */
+    /* border: 2px solid navajowhite; */
+}
+
+.title {
+    color: royalblue;
+    text-align: left;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tabsContainer {
+    /* background: black; */
+    width: 920px;
+    height: 100px;
+    border-radius: 5px;
+    position: absolute;
+    height: 150px;
+    left: calc(50% - 920px/2);
+    /* border: 1px solid royalblue; */
+    top: 60px;
+    background: antiquewhite;
+    background: transparent;
+    background: white; box-shadow: 0px 0px 5px #edeae5;
+}
+
+.combo {
+    float: left;
+    position: relative;
+    /* background: white; */
+    width: 170px;
+    height: 130px;
+    margin-left: 48px;
+    /* position: absolute; */
+    margin-top: 12px;
+}
+
+.seeMore {
+    position: absolute;
+    /* right: 18px; */
+    bottom: 0px;
+    left: 150px;
+    width: 120px;
+    height: 30px;
+    background: royalblue;
+    /* border: 1px solid white; */
+    font-size: 14px;
+    border-radius: 5px;
+    /* color: royalblue; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tabText {
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+    color: royalblue;
+    top: 112px;
+    font-size: 15px;
+}
+
+.tabImage {
+    position: absolute;
+    /* background: black; */
+    height: 110px;
+    width: 170px;
+    /* border: 1px solid #ffbb55; */
+    box-shadow: 0px 0px 5px #edeae5;
+}
+
+#tab2 {
+    top: 470px;
+}
+
+#tab3 {
+    top: 580px;
+}
+
+.tabImage img {
+    width: 170px;
+    height: 110px;
+    /*border-radius: 5px;*/
+}
+
+#plusImage1 {
+    position: relative;
+    /* right: 0px; */
+    /* bottom: 20px; */
+    bottom: 25px;
+    left: 260px;
+    cursor: pointer;
+    /* top: 2px; */
+}
+.minusImage {
+    position: absolute;
+    left: 101px;
+    top: 8px;
+    display: none;
+    cursor: pointer;
+}
+.minusImage0 {
+    position: absolute;
+    right: 14px;
+    top: 8px;
+    display: none;
+    cursor: pointer;
+}
+.minusImage1 {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+.minusImage2 {
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+a#more {
+    color: white;
+    width: 100px;
+    position: absolute;
+    left: calc(50% - 100px/2);
+    top: calc(50% - 16px/2);
+    /* position: relative; */
+    /* margin-top: calc(50% - 16px/2); */
+}
+#tab1 {
+    /* margin-top: 10px; */
+}
+
+#add {
+    position: absolute;
+    /* right: 18px; */
+    bottom: 25px;
+    left: 570px;
+    width: 60px;
+    height: 34px;
+    background: royalblue;
+    /* border: 1px solid white; */
+    font-size: 14px;
+    border-radius: 5px;
+    /* color: royalblue; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#add a {
+    color: white;
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 50px/2);
+    top: calc(50% - 16px/2);
+}
+
+#groupWrapper {
+    width: 920px;
+    height: 110px;
+    position: absolute;
+    /* border: 1px solid royalblue; */
+    border-radius: 5px;
+    top: 150px;
+    left: calc(50% - 920px/2);
+    background: white; box-shadow: 0px 0px 5px #edeae5;
+}
+
+#groupText {
+    color: royalblue; text-align: left; position: absolute; top: 20px; left: 20px; font-size: 18px; font-family: 'Ubuntu', sans-serif;
+}
+
+#groups {
+    position: absolute;
+    left: 20px;
+    top: 55px;
+    /* float: left; */
+}
+
+.group {
+    position: relative; /* right: 18px; */ 
+    /* bottom: 0px; */ 
+    /* color: white; */
+    margin-right: 10px;
+    /* left: 20px; */ 
+    float: left;
+    width: 120px; 
+    height: 30px; background: royalblue; /* border: 1px solid white; */ font-size: 14px; border-radius: 5px; /* color: royalblue; */ font-family: 'Ubuntu', sans-serif;
+}
+
+a .group{
+    color: white;
+    line-height: 30px;
+}
+
+#edit {
+    background: tomato;
+    width: 50px;
+    position: absolute;
+    left: 830px;
+    cursor: pointer;
+}
+
+#edit a {
+    /* position: absolute; */
+    /* width: 100px; */
+    line-height: 30px;
+}
+
+#tabEdit {
+    position: absolute;
+    left: 20px;
+    bottom: 0px;
+    background: tomato;
+    cursor: pointer;
+}
+
+#tabsContainer2 {
+    height: 300px;
+}
+
+#tabEdit2 {
+    position: absolute; 
+    left: 20px; 
+    top: 370px; 
+    background: tomato;
+    cursor: pointer;
+}
+
+#seeMore2 {
+    top: 370px;
+}
+a .group {
+    color: white;
+    line-height: 30px;
+}
+
+a .seeMore {
+    color: white;
+    line-height: 30px;
+}
+
+#star {
+    position: absolute;
+    width: 920px;
+    height: 50px;
+    bottom: 100px;
+    left: calc(50% - 920px/2);
+}
+
+#starText {
+    color: royalblue;
+    position: absolute;
+    left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    top: 12px;
+}
+
+.selected{
+  -webkit-box-shadow: 0px 0px 5px royalblue;
+  -moz-box-shadow: 0px 0px 5px royalblue;
+  -o-box-shadow: 0px 0px 5px royalblue;
+  box-shadow: 0px 0px 5px royalblue;
+}
+  
+.large{
+  -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+          transform: scale(1.1);
+}
